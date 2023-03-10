@@ -1,0 +1,15 @@
+&inputpp
+ outdir='temp',
+ prefix='Be',
+ plot_num=3,
+ emin=-5.0,
+ emax=20.0,
+ delta_e=2.5,
+ degauss_ldos=5.0,
+ use_gauss_ldos=.true.,
+/
+&plot
+ iflag=3,
+ output_format=6,
+ fileout='Be_ldos.cube',
+/

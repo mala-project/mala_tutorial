@@ -1,0 +1,48 @@
+&CONTROL
+   calculation      = 'scf'
+   verbosity        = 'high'
+   restart_mode     = 'from_scratch'
+   tstress          = .true.
+   tprnfor          = .true.
+   outdir           = 'temp'
+   prefix           = 'Be'
+   pseudo_dir       = './'
+/
+&SYSTEM
+   ibrav            = 0
+   nbnd             = 4
+   ecutwfc          = 40
+   ecutrho          = 160
+   nosym            = .true.
+   noinv            = .true.
+   occupations      = 'smearing'
+   degauss          = 0.0018874
+   smearing         = 'fermi-dirac'
+   ntyp             = 1
+   nat              = 2
+/
+&ELECTRONS
+   conv_thr         = 0.02
+   mixing_mode      = 'plain'
+   mixing_beta      = 0.1
+/
+&IONS
+/
+&CELL
+/
+
+ATOMIC_SPECIES
+Be 9.0121831 Be.pbe-n-rrkjus_psl.1.0.0.UPF
+
+K_POINTS automatic
+8 8 8  0 0 0
+
+CELL_PARAMETERS angstrom
+2.25982586776780 0.00000000000000 0.00000000000000
+-1.12991293388390 1.95706569713361 0.00000000000000
+0.00000000000000 0.00000000000000 3.56987856087494
+
+ATOMIC_POSITIONS angstrom
+Be 1.7528828707 0.3210037143 2.6776725841 
+Be -0.6229700257 1.6360627414 0.8922054159 
+
