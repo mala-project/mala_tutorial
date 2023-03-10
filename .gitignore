@@ -37,3 +37,5 @@ outs/
 *.pth
 .idea
 *.tmp
+*.zip
+*.json
