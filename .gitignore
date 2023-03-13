@@ -39,3 +39,10 @@ outs/
 *.tmp
 *.zip
 *.json
+*.aux
+*.log
+*.out
+*.snm
+*.gz
+*.toc
+*.nav
