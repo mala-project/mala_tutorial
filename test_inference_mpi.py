@@ -13,4 +13,4 @@ calculator.mala_parameters.targets.pseudopotential_path = "./data_generation/"
 Be16.set_calculator(calculator)
 start_time = time()
 energy = Be16.get_potential_energy()
-print(energy, time()-start_time)
+mala.printout(energy, time()-start_time)
