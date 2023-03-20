@@ -11,7 +11,7 @@
 % metadata
 \usetheme{CASUS}
 \title[MALA background]{MALA background} 
-\subtitle{Part of the tutorial on MALA}
+\subtitle{MALA tutorial}
 \author{Lenz Fiedler}
 \date{21.03.2022}
 
@@ -52,10 +52,12 @@
 	\end{frame}
 	\begin{frame}{Relevant equations}
 	\begin{align}
-		\visible<1->{\tilde{d}(\epsilon, \br) = &M(B(\,J, \br)) \nonumber \\}
-		\visible<2->{n(\br) = & \int d \epsilon\;  f^\tau(\epsilon) d(\epsilon, \br) \; \nonumber \\
+		\visible<1->{A[n] = A[n, \phi_j[n]] = &T\s[\phi_j[n]] - k_\mathrm{B}\tau S\s[\phi_j[n]] + E\h[n] + E\xc[n] + E^{ei}[n] \nonumber \\}
+		\visible<2->{d(\epsilon, \br) = &\sum_j {\mid\phi_j(\br)\mid}^2 \delta(\epsilon-\epsilon_j) \nonumber \\}
+		\visible<3->{n(\br) = & \int d \epsilon\;  f^\tau(\epsilon) d(\epsilon, \br) \; \nonumber \\
 	        D(\epsilon) =  &\int d\br \; d(\epsilon, \br)  \nonumber \\}
-		\visible<3->{A[n] = A[n[d], D[d]] = &E_b[D[d]]-\kB\tau S_\mathrm{S}[D[d]]-E_\mathrm{H}[n[d]] \nonumber \\ \nonumber &+E_\mathrm{XC}-\int d \br v_\mathrm{XC}(\br)n[d](\br)+E_{ii}}
+		\visible<4->{A[n] = A[n[d], D[d]] = &E_b[D[d]]-\kB\tau S_\mathrm{S}[D[d]]-E_\mathrm{H}[n[d]] \nonumber +E_\mathrm{XC}[n[d]]-\int d \br v_\mathrm{XC}(\br)n[d](\br) \\}
+		\visible<5->{\tilde{d}(\epsilon, \br) = &M(B(\,J, \br)) \nonumber }
 	\end{align}
 	\end{frame}
 	\begin{frame}{MALA publications}
